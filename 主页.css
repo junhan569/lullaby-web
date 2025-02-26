@@ -1,0 +1,89 @@
+body {
+    background-image: url('cover/封面.jpeg');
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    height: 100vh;
+    background-color: none;
+    font-family: serif;
+}
+
+.container {
+    position: absolute;
+    align-items: flex-start; 
+    left: 30%;
+    top: 20%;
+
+}
+
+h1 {
+    font-family: "Fredericka the Great", serif;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.dream-button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: rgba(62, 62, 138, 0.5);
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Fredericka the Great", serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.dream-button:hover {
+    background-color: rgba(100, 100, 200, 0.7);
+    border-color: darkblue;
+    animation: jelly 0.5s;
+}
+
+
+.dream-button:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+    scale: 120%;
+}
+
+@keyframes jelly{
+    
+    99%{
+        transform: scale(1,1)
+    }
+    25%{
+        transform: scale(0.9,1.1)
+    }
+    50%{
+        transform: scale(1.1,0.9)
+    }
+    75%{
+        transform: scale(0.95,1.05)
+    }
+}
+
+@media (max-width:600px) {
+    .dream-button{
+        padding: 8px 13px;
+        position: relative;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+}

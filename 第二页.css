@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+.loader {
+    clip-path: inset(0 100% 0 0);
+    animation: l5 3s steps(11) forwards;
+  }
+
+  @keyframes l5 {to{clip-path: inset(0 -1ch 0 0)}}
+
+
+  body {
+      background-color: #000000;
+      padding-left: 60px;
+      overflow: hidden;
+  }
+  
+  .loader {
+      position: relative;
+      font-family: "Fredericka the Great", serif;
+      font-size: 45px;
+      font-style: italic;
+      font-weight: normal;
+      position: absolute;
+      top: 40%;
+      color:rgb(242, 248, 252)
+  }
+
+  .Go{
+    display: flex;
+    border: 1rem;
+    position: absolute;
+    font-size: 50;
+    top: 50%;
+    right: 10%;
+    padding: 10px
+  }
+
+  .Go{
+    align-items: bottom;
+    border-radius: 10px;
+    background-color: rgb(250, 248, 211);
+    text-align: center;
+    font-family: "Fredericka the Great", serif;
+    animation: jelly 0.5s ;
+    cursor: pointer;
+  }
+
+  .Go:hover {
+    scale: 120%;
+}
+
+@keyframes jelly{
+    
+    99%{
+        transform: scale(1,1)
+    }
+    25%{
+        transform: scale(0.9,1.1)
+    }
+    50%{
+        transform: scale(1.1,0.9)
+    }
+    75%{
+        transform: scale(0.95,1.05)
+    }
+}
+
+@media (max-width:600px) {
+    .loader{
+        font-size: 20px
+    }
+    .loader{
+        position: absolute;
+        top:50%;
+        left:20px;
+    }
+
+    .Go{
+        display: flex;
+        border: 0.8rem;
+        position: absolute;
+        font-size: 15px;
+        top: 60%;
+        right: 10%;
+        padding: 8px
+      }
+
+}
+
+  

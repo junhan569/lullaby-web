@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You are my sunshine</title>
+    <link rel="stylesheet" href="阳光.css">
+
+</head>
+<body>
+    <div class="lyrics">
+        You are my <span class="sunshine" onclick="revealText(this)"></span>, <br>
+        my only <span class="sunshine" onclick="revealText(this)"></span> <br>
+        You make me happy when skies are gray <br>
+        You'll never know dear, how much I love you <br>
+        Please don't take my <span class="sunshine" onclick="revealText(this)"></span> away
+    </div>
+
+    <script>
+        function revealText(element) {
+            element.classList.add("clicked");
+            element.innerText = "sunshine";
+        }
+    </script>
+
+<div class="menu">
+    <a href="content.html">MENU</a>
+</div>
+
+</body>
+</html>

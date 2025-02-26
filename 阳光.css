@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+body {
+    background-color: #fffde7;
+    padding-left: 60px;
+    overflow: hidden;
+}
+
+.lyrics {
+    position: relative;
+    font-family: "Fredericka the Great", serif;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: normal;
+    position: absolute;
+    top: 120%;
+    animation: riseUp 3s ease-out forwards;
+}
+
+@keyframes riseUp {
+    from {
+        top: 120%;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+}
+
+.sunshine {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 191, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.sunshine.clicked {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 45px;
+}
+
+.menu{
+    position: fixed;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px; 
+    z-index: 999; 
+    font-size: 16px;
+    font-weight: bold;
+    top: 50px;
+    left: 100px;
+}
+
+@media (max-width:600px) {
+    .lyrics{
+        font-size: 24px;
+        left: 20px;
+    }
+    .sunshine.clicked {
+        font-size: 24px;
+    }
+}
+
+

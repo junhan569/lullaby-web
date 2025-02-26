@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="滑动菜单.css">
+
+</head>
+
+<body>
+
+<div class="home">
+    <a href="Home page.html">HOME</a>
+</div>
+
+<p class="definition">Lullaby, a quiet, gentle song sung to send a child to sleep.</p>
+
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="Little star.html"><img src="cover/星星.jpg" /></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="Sunshine.html"><img src="cover/Sunshine.jpg" /></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="Hush little baby.html"><img src="cover/hush.jpg" /></a>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+
+
+</body>
+
+</html>

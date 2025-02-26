@@ -1,0 +1,64 @@
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #24496e;
+            margin: 0;
+        }
+
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            font-family: 'Fredericka the Great', monospace;
+            font-size: 20px;
+            white-space: nowrap;
+            text-align: center;
+            transform: rotate(180deg);
+            color: aliceblue;
+        }
+
+        .vertical-text{
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .vertical-text span {
+            cursor: pointer;
+            opacity: 1; 
+            display: inline-block;
+            animation: fadeOut 10s ease-in-out forwards;
+        }
+        
+        @keyframes fadeOut {
+            0% { opacity: 1; } 
+            100% { opacity: 0; } 
+        }
+ 
+        
+        .menu{
+            top: 50px !important;
+            left: 100px !important;
+            padding : 10px!important;
+            position: fixed; 
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px; 
+            z-index: 999; 
+            font-size: 16px;
+            font-weight: bold;
+
+        }
+
+        @media (max-width:600px){
+            .vertical-text{
+                font-size: 10px;
+            }
+        }
+
+        
+        
+        
+
+
